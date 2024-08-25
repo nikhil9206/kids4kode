@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+</style>
+
+<body>
+
+<div class="head"></div>
+    
+<div class="navbar"> 
+    <img class="logo" src="images/'kid4kode' text.png" alt="logo">
+
+    <div class="dropdown lines">
+        <span class="menu-container"><img src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6"/></span>
+        <div class="dropdown-content">
+                <button onclick="window.location.href=''" class="drop-button openPopup header"><h3>Home</h3></button><br>
+                <button onclick="window.location.href='#camps'" class="drop-button openPopup header"><h3>Camps</h3></button>
+                <button id="openPopup5" class="drop-button openPopup header"><h3>Our Vision</h3></button>
+                <button id="openPopup6" class="drop-button openPopup header"><h3>About Me</h3></button>
+                <button id="openPopup7" class="drop-button openPopup header"><h3>Contact</h3></button>
+        </div>
+    </div>
+
+    <div class="navbuttons">
+        <a class="nav-link" href=""><h3>Home</h3></a>
+        <a  class="nav-link" href="#camps"><h3>Camps</h3></a>
+        <div class="dropdown">
+            <button class="dropbtn">About</button>
+            <div class="dropdown-content">
+                <button  id="openPopup5" class="drop-button openPopup">Our Vision</button>
+                <button id="openPopup6" class="drop-button openPopup">About Me</button>
+            </div>
+          </div>
+        
+        <button  id="openPopup7" class="drop-button openPopup header" href=""><h3>Contact</h3></button>
+
+    </div>
+</div>
+
+<div class="hero-area"></div>
+
+
+<div style="display: none;" class="hero-switcher">
+    <button class="hero-switcher-button"></button>
+    <button class="hero-switcher-button"></button>
+    <button class="hero-switcher-button"></button>
+    <div class="vl"></div>
+    <button class="hero-switcher-button-play" onclick="play()"></button>
+</div>
+
+<hr>
+
+<div class="info-area">
+    <img class="info-image" src="images/info-image.png" alt="">
+    
+    
+    <div class="info-text">
+        <div class="info-title"> UNLOCK YOUR CHILD'S <span class="info-title-special">TRUE POTENTIAL</span></div>
+    <div class="info-description">
+        Kids4Kode is a non-profit organization dedicated to making programming education accessible and affordable for all students. Our mission is to empower young minds with the skills and knowledge needed to thrive in the digital age through affordable, high-quality coding classes. We believe every child, regardless of background or financial situation, should have the opportunity to learn to code and develop valuable technical skills.
+        <br><br>
+        At Kids4Kode, we believe in the power of hands-on learning. Our unique 'project-style teaching' approach ensures students learn by doing. Instead of traditional lectures, our students engage in practical projects that make learning interactive and fun. Whether creating calculators, building grocery list applications, or exploring basic game development, students gain practical experience that reinforces their learning.
+        <br><br>
+        Our experienced instructors are passionate about coding and education. They provide personalized guidance and support to help each student succeed. We emphasize critical thinking, problem-solving, and creativity, ensuring our students not only learn to code but also develop skills that will serve them well in any future career.
+        <br><br>
+        In addition to our regular classes, Kids4Kode offers special workshops, summer camps, and community outreach programs to reach more students. We partner with schools, community centers, and other organizations to bring our programs to those who need them most.
+        
+        Join us at Kids4Kode and embark on a journey of creativity, problem-solving, and innovation. Let's build the future together, one line of code at a time. Together, we can make a difference in the lives of young people and inspire the next generation of tech innovators.</div>
+    </div>
+</div>
+
+<div id="camps"></div>
+<hr>
+
+<div class="courses-title"> 
+    <h1>Our Courses</h1>
+</div>
+
+<hr class="half">
+
+<div class="courses-tabs slide-right" style="z-index: -1;">
+    <button id="left-camp-button" class="button-test" onclick="moveLeftCamp()"><img width="24" height="24" src="https://img.icons8.com/material-rounded/5000/000000/circled-left--v1.png" alt="circled-left--v1"/> </button>
+    
+    <button id="openPopup1" class="course-tab openPopup sm">
+        <div class="course-tab-header">
+            <b class="course-tab-title"></b> 
+            <span class="course-icon"><img src="images/code thing.png" alt=""></span>
+        </div>
+        <div class="course-desc">
+            <h3 class="course-tab-slogan"></h3> 
+            <span class="course-tab-desc"></span>
+        </div>
+
+
+        <div class="extra-info">   
+            <hr class="course tabs-dotted">
+            <div class="course tabs-info">
+                <b>Course Time:</b> 
+                <span class="course-tab-time"></span>
+            </div>
+            <hr class="course tabs-dotted">
+            <div class="course tabs-info">
+                <b>Skill Level:</b> 
+                <span class="course-tab-skill"></span>
+            </div>
+        </div>
+    </button>
+
+    <button id="openPopup1" class="course-tab openPopup lg">
+        <div class="course-tab-header">
+            <b class="course-tab-title"></b> 
+            <span class="course-icon"><img src="images/code thing.png" alt=""></span>
+        </div>
+        <div class="course-desc">
+            <h3 class="course-tab-slogan"></h3> 
+            <span class="course-tab-desc"></span>
+        </div>
+
+
+        <div class="extra-info">   
+            <hr class="course tabs-dotted">
+            <div class="course tabs-info">
+                <b>Course Time:</b> 
+                <span class="course-tab-time"></span>
+            </div>
+            <hr class="course tabs-dotted">
+            <div class="course tabs-info">
+                <b>Skill Level:</b> 
+                <span class="course-tab-skill"></span>
+            </div>
+        </div>
+    </button>
+
+    <button id="openPopup1" class="course-tab openPopup lg">
+        <div class="course-tab-header">
+            <b class="course-tab-title"></b> 
+            <span class="course-icon"><img src="images/code thing.png" alt=""></span>
+        </div>
+        <div class="course-desc">
+            <h3 class="course-tab-slogan"></h3> 
+            <span class="course-tab-desc"></span>
+        </div>
+
+
+        <div class="extra-info">   
+            <hr class="course tabs-dotted">
+            <div class="course tabs-info">
+                <b>Course Time:</b> 
+                <span class="course-tab-time"></span>
+            </div>
+            <hr class="course tabs-dotted">
+            <div class="course tabs-info">
+                <b>Skill Level:</b> 
+                <span class="course-tab-skill"></span>
+            </div>
+        </div>
+    </button>
+
+    <button id="right-camp-button" class="button-test" onclick="moveRightCamp()"><img style="transform: rotate(180deg);" width="24" height="24" src="https://img.icons8.com/material-rounded/5000/000000/circled-left--v1.png" alt="circled-left--v1"/></button>
+</div>
+
+<br>
+<div class="note"> <b>Note: Python 1 and Python 2 are $25, while Python 3 and Python 4 are $50 </b></div>
+
+<hr>
+
+<div class="testimonials-title"> 
+    <h1>Testimonials</h1>
+</div>
+
+<hr class="half">
+
+<div class="testimonials-area slide-left">
+    <button class="button-test" onclick="moveLeftTest()"><img width="24" height="24" src="https://img.icons8.com/material-rounded/5000/000000/circled-left--v1.png" alt="circled-left--v1"/> </button>
+    <div class="testimonial sm">
+        <div id="header-1" class="test-tab-header"> </div>
+
+        <div id="body-1" class="test-tab-body"> </div>
+
+        <hr class="tabs-dotted">
+        <div id="caption-1" class="test-tab-caption"></div>
+    </div>
+    <div class="testimonial lg">
+        <div id="header-2" class="test-tab-header"></div>
+
+        <div id="body-2" class="test-tab-body"></div>
+
+        <hr class="tabs-dotted">
+        <div id="caption-2" class="test-tab-caption"></div>
+    </div>
+    <div class="testimonial lg">
+        <div id="header-3" class="test-tab-header"></div>
+        <div id="body-3" class="test-tab-body"></div>
+
+        <hr class="tabs-dotted">
+        <div id="caption-3" class="test-tab-caption"></div>
+    </div>
+    <button class="button-test" onclick="moveRightTest()"><img style="transform: rotate(180deg);" width="24" height="24" src="https://img.icons8.com/material-rounded/5000/000000/circled-left--v1.png" alt="circled-left--v1"/></button>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p style="padding:-10px"><img class="footer logo" src="images/'kid4kode' text.png" alt="logo"></p>
+        <ul class="footer-links">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#camps">Camps</a></li>
+            <li><button id="openPopup5" class="footer-button openPopup">About</button></li>
+            <li><a class="footer-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+</footer>
+
+
+<div id="overlay1" class="overlay">
+    <div id="popup1" class="popup">
+        <div class="only-phones">
+            <div class="phones-text"> Please view on desktop or larger screen. Or view details in sign-up google form below:</div>
+            <button class="sign-up phones">Sign up</button>
+        </div>
+
+        <div class="popup-content camps">
+            <button class="closePopup"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/500/000000/cancel.png" alt="cancel"/></button>
+
+            <div class="popup-top row">
+                <div class="col-6">
+                    <i class="over-title"></i>
+                    <h1 class="over-slogan"></h1>
+                    <p class="over-mini-desc"></p>
+
+                    <button class="sign-up">Sign up</button>
+                </div>
+
+                <div class="camp-skills col-6">
+                    <h2 class="camp-skills-title">Ideas we touch upon:</h2>
+
+                    <div class="camp-skill-single over-idea"></div>
+                    <hr class="camp-divider">
+                    <div class="camp-skill-single over-idea"></div>
+                    <hr class="camp-divider">
+                    <div class="camp-skill-single over-idea"></div>
+                    <hr class="camp-divider">
+                    <div class="camp-skill-single over-idea"></div>
+                </div>
+
+            </div>
+
+            <div class="popup-mid row">
+                <div class="popup-mid-item col-3">
+                    <b>Skill Level:</b> <span class="over-skill-mid"></span>
+                </div>
+                <div class="vl"></div>
+                <div class="popup-mid-item col-3">
+                    <b>Course Time: </b> <span class="over-time"></span>
+                </div>
+                <div class="vl"></div>
+                <div class="popup-mid-item col-3">
+                    <b>Age Range: </b> <span class="over-age"></span>
+                </div>
+                <div class="vl"></div>
+                <div class="popup-mid-item col-3">
+                    <b>Prequisites: </b> <span class="over-prereq"></span>
+                </div>
+            </div>
+
+            <div class="popup-bottom row">
+                <div class="col-6">
+                    <h3>About this course</h3>
+                    <p class="over-full-desc"></p>
+                </div>
+                <div class="col-6 skills-gain">
+                    <h3>Skills you'll gain</h3>
+                    <ul>
+                        <li class="over-skill"></li>
+                        <li class="over-skill"></li>
+                        <li class="over-skill"></li>
+                        <li class="over-skill"></li>
+                        <li class="over-skill"></li>
+                        <li class="over-skill"></li>
+                        <li class="over-skill"></li>
+                      </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="overlay5" class="overlay">
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <button class="closePopup"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/500/000000/cancel.png" alt="cancel"/></button>
+
+            <div class="popup-top-vision">
+                    <h1 class="vision-title">Our Vision</h1>
+                    <p class="vision-slogan">Empowering kids through a programming education!</p>
+
+
+                    <div class="vision-buttons">
+                        <button class="vision-button">Sign-Up</button>
+                        <button class="vision-button">Contact Us</button>
+                    </div>
+            </div>
+
+            <div class="popup-bottom-vision">
+
+                    <h3 class="vision-about">About this non-profit</h3>
+                    <p class="vision-text">
+                        Kids4Kode is a nonprofit organization dedicated to empowering children through coding education. Our mission is to bridge the digital divide by providing accessible and high-quality programming instruction to kids, especially those from underprivileged backgrounds. Our vision is to inspire a new generation of innovators and problem-solvers who are confident and proficient in technology. We strive to create opportunities for children to explore the exciting world of coding, develop their talents, and build a strong foundation for their future careers.
+                        <br><br>
+                        At Kids4Kode, we believe that coding is not just a technical skill, but a means of unlocking potential and opening doors to endless opportunities. Our supportive community encourages every child to explore their interests and develop their skills in a collaborative environment. By fostering creativity, collaboration, and critical thinking, we equip young minds with the tools necessary for success in an increasingly digital world. Join us in our mission to empower the next generation of tech leaders and innovators, and help us create a future where every child has the opportunity to thrive in technology.
+                    </p>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="overlay6" class="overlay">
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <button class="closePopup"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/500/000000/cancel.png" alt="cancel"/></button>
+
+            <div class="popup-top-vision">
+                    <h1 class="vision-title" >About Me!</h1>
+                    <p class="vision-slogan">Nikhil Adapala</p>
+
+
+                    <div class="vision-buttons">
+                        <button class="vision-button">Sign-Up</button>
+                        <button class="vision-button">Contact Us</button>
+                    </div>
+            </div>
+
+            <div class="popup-bottom-vision">
+
+                    <h3 class="vision-about">About myself</h3>
+                    <p class="vision-text">
+                        I began my journey into the world of programming in 9th grade, where I quickly developed a passion for coding. This passion led me to serve as a teaching assistant at Code2College, where I spent a summer teaching high school students. It was during this experience that I fell in love with teaching and realized the joy of helping others learn and grow. Following this, I worked part-time at Mathnasium, further honing my teaching skills and expanding my experience in education.
+                        <br><br>
+                        At the start of 2024, driven by my dedication to education and my passion for coding, I founded Kids4Kode. Our first camp, hosted in the summer of 2024, was a resounding success, marking the beginning of our mission to make coding education accessible to all children. With a certification in Python and a strong background in teaching, I am committed to inspiring and empowering the next generation of tech leaders. Teaching is my true calling, and through Kids4Kode, I aim to create opportunities for children to explore, learn, and thrive in the exciting world of technology.
+                    </p>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="overlay7" class="overlay">
+    <div id="popup7" class="popup">
+        <div class="popup-content">
+            <button class="closePopup"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/500/000000/cancel.png" alt="cancel"/></button>
+
+            <div class="popup-top-vision contact">
+                    <h1 class="contact-title">Contact</h1>
+                    <p class="contact-details-title"> <b>Details</b></p>
+                    <p class="contact-details">adpalanikhil@gmail.com <br> +1 512-884-7100</p>
+
+
+                    <div class="vision-buttons">
+                        <button class="vision-button">Sign-Up</button>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- <div style="height: 100000vh;"></div> -->
+</body>
+<script src="scripts.js"></script>
+</html>
