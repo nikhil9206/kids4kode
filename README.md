@@ -4,7 +4,7 @@ Welcome to Kids4Kode! We're dedicated to teaching coding to kids, focusing on Py
 
 ## About Kids4Kode
 
-Kids4Kode is a non-profit organization that offers coding education to children aged 8-16. Our mission is to provide high-quality programming education to all students, regardless of their financial background. To date, we've reached over 50 kids, giving them the opportunity to learn and grow in the field of technology.
+Kids4Kode is a non-profit organization that offers coding education to children aged 8-16. Our mission is to provide high-quality programming education to all students, regardless of their financial background.
 
 ## Project Overview
 
