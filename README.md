@@ -13,7 +13,6 @@ This repository contains the codebase for the Kids4Kode website. The site serves
 ### Key Features
 
 - **Responsive Design**: The website is designed to work well on both desktop and mobile devices.
-- **Interactive Hero Area**: Engaging hero section with switcher buttons for a dynamic experience.
 - **Information Sections**: Dedicated areas for course information, testimonials, and more.
 - **Popup Modals**: For additional content and user interactions.
 - **Footer**: Includes navigation and contact links.
